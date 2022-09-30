@@ -24,6 +24,7 @@ export default class Card {
     // don't forget to append the child to to DOM
     document.querySelector(".bingo__board").appendChild(card);
     card.classList.add("bingo__card");
+    card.innerHTML = this.title;
 
 
     // 🔥🔥🔥 TODO4: when we click an item, we want to check for winners and we want to save the selection to storage
