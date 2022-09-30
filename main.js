@@ -49,11 +49,10 @@ class Bingo {
 
     // 🔥🔥🔥 TODO 2
     // loop through all the cards in the array and create a new instance of a Card()
-    // for()
-    // create a new card object
-    // let card = new Card(this.cards[i]);
-    // render the card
-    // card.render();
+    this.cards.forEach((card, index) => {
+      let newCard = new Card(card);
+      newCard.render(index);
+    });
   }
 
   static checkWinner() {
