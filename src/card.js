@@ -1,5 +1,3 @@
-import Bingo from "./main.js";
-
 export default class Card {
   constructor(title) {
     // the constructor is called when you create a new instance of the class
