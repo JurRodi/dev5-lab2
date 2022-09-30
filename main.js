@@ -1,5 +1,5 @@
 import './style.css'
-import Card from "./card.js";
+import Card from "./src/card.js";
 
 // 🔥🔥🔥 TODO 1 - make sure to export the class, if you want to be able to import the class elsewhere
 class Bingo {
@@ -103,3 +103,4 @@ class Bingo {
     }
   }
 }
+export default Bingo;
