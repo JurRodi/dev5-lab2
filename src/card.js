@@ -1,3 +1,5 @@
+import Bingo from "../main";
+
 export default class Card {
   constructor(title) {
     // the constructor is called when you create a new instance of the class
@@ -29,9 +31,11 @@ export default class Card {
 
     // 🔥🔥🔥 TODO4: when we click an item, we want to check for winners and we want to save the selection to storage
     card.addEventListener("click", (e) => {
-      // this.markDone(e.target);
+      this.markDone(e.target);
       // call checkWinner() on the Bingo class
       // try to call the save() method on the Bingo class
+      Bingo.checkWinner();
+      Bingo.save();
     });
   }
 }
