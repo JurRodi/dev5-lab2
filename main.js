@@ -61,7 +61,7 @@ class Bingo {
 
     // 🔥🔥🔥 TODO 6
     // count all cards that are marked as done (select done items and count them with .length)
-    let cardsDone = [];
+    let cardsDone = document.querySelectorAll(".bingo__card--done");
     if (cardsDone.length === 5) {
     // show the animated gif to the winner
       document.querySelector(".bingo__overlay").style.display = "block";
